@@ -5,10 +5,16 @@
     <title>users</title>
   </head>
   <body>
+    <a href="/adduser">add user</a>
     {{#userskey}}
-      {{name}}
-      {{email}}
-      {{bio}}
+    <div class="userbox">
+      <h4> <a href="/update/{{id}}">{{name}}</a></h4>
+      <h4>{{email}}</h4>
+      <h4>{{bio}}</h4>
+    </div>
+    <form class="" action="/delete/{{id}}" method="post">
+      <button type="submit" name="button">delete</button>
+    </form>
     {{/userskey}}
   </body>
 </html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {{#userskey}}
+    <form class="" action="/update/{{id}}" method="post">
+      <input type="text" name="name" value="{{name}}" placeholder="name" >
+      <input type="email" name="email" value="{{email}}" placeholder="email">
+      <input type="text" name="bio" value="{{bio}}"placeholder="bio">
+      <button type="submit" name="button">Update</button>
+    </form>
+    {{/userskey}}
+  </body>
+</html>
